@@ -4,5 +4,6 @@
 
 Каждые 5 сек проводится тест на соответствие данных отдаваемых этим сервером с данными из источника (https://api.blockchain.com/v3/exchange/tickers).
 Отключить тестирование можно удалив строки 44 и 45 из файла server.ry:
-    test = Thread(target=os.system, args=('test.py',), daemon=True)
-    test.start()
+
+test = Thread(target=os.system, args=('test.py',), daemon=True)
+test.start()
